@@ -10,7 +10,7 @@ import { AppointmentCreate } from '../screens/AppointmentCreate';
 
 const { Navigator, Screen } = createStackNavigator();
 
-export function AuthRoutes() {
+export function AppRoutes() {
   return (
     <Navigator
       headerMode="none"
@@ -19,11 +19,7 @@ export function AuthRoutes() {
           backgroundColor: theme.colors.secondary100,
         }
       }}
-    >
-      <Screen 
-        name='SignIn'
-        component={SignIn}
-      />
+    >      
       <Screen 
         name='Home'
         component={Home}
